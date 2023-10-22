@@ -6,9 +6,9 @@ from PIL import Image
 from io import BytesIO
 import pickle
 
-with open(r"C:\Users\kwabe\OneDrive\Desktop\ai\model.pkl", "rb") as file:
+with open("model.pkl", "rb") as file:
     model = pickle.load(file)
-with open(r"C:\Users\kwabe\OneDrive\Desktop\ai\scaler_obj.pkl", "rb") as scaler:
+with open("scaler_obj.pkl", "rb") as scaler:
     scale = pickle.load(scaler)
 
 st.set_page_config(
